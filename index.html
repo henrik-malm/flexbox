@@ -3,41 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Document</Display Value Key to your heart>
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="javascript.js"></script>
 </head>
 
-
-
 <body>
-
   
-  <div class="con-a">
-    <div>One</div>
-    <div>Two</div>
-    <div>Three </div>
+  <div id="controls">
+    <label for="displayType">display:</label>
+    <select id="displayType" onchange="changeDisplayType()">
+      <option value="block">block</option>
+      <option value="flow-root">flow-root</option>
+      <option value="block flow-root">block flow-root</option>
+      <option value="inline">inline</option>
+      <option value="inline flow-root">inline flow-root</option>
+    </select>
   </div>
-
-  <div class="con-b">
-    <div>One</div>
-    <div>Two</div>
-    <div>Three </div>
+  
+  <div id="parent">
+    <p id="child">The #child paragraph (nested in #parent).</p>
   </div>
-
-
-  <p> 
-    Borderstyle: <span> 
-      dotted  |
-      dashed  |
-      solid   |
-      double  |
-      groove  |
-      ridge   |
-      inset   |
-      outset  
-    </span> 
+  <p id="sibling">The #sibling paragraph (sibling of #parent).</p>
+  
+  <p>
+    This paragraph has a span <span class="inline-block">with padding</span> it is
+    an inline-block so the padding is contained and pushes the other line boxes
+    away.
   </p>
-
 
 
 </body>
